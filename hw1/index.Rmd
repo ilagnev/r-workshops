@@ -2,8 +2,11 @@
 title: "Data analysis: home work #1"
 author: "nick ilagnev"
 date: "19 April 2016"
-output: md_document
-  
+output: 
+  md_document:
+    pandoc_args: [ 
+      "--output=README.md" 
+    ] 
 ---
 
 ```{r setup, include=FALSE}
