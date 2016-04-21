@@ -3,6 +3,7 @@ title: "Data analysis: home work #1"
 author: "nick ilagnev"
 date: "19 April 2016"
 output: md_document
+  
 ---
 
 ```{r setup, include=FALSE}

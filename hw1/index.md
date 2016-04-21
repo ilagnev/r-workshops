@@ -19,11 +19,11 @@ Check dataset sizes, and names
 
 ------------------------------------------------------------------------
 
-![](hw1_files/figure-markdown_strict/unnamed-chunk-3-1.png)<!-- -->
+![](index_files/figure-markdown_strict/unnamed-chunk-3-1.png)<!-- -->
 
 ------------------------------------------------------------------------
 
-![](hw1_files/figure-markdown_strict/unnamed-chunk-4-1.png)<!-- -->
+![](index_files/figure-markdown_strict/unnamed-chunk-4-1.png)<!-- -->
 
 Data analys over actual newborn data
 ------------------------------------
@@ -56,7 +56,7 @@ are differ (1 - mean equal)
 Plot over relation between girls and boys borned in present years. As we
 can see on the plot boys born have tend to decrease from 1940 and then
 after 1975
-![](hw1_files/figure-markdown_strict/unnamed-chunk-8-1.png)<!-- -->
+![](index_files/figure-markdown_strict/unnamed-chunk-8-1.png)<!-- -->
 
 ------------------------------------------------------------------------
 
