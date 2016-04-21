@@ -1,0 +1,70 @@
+---
+title: "Data analysis: home work #1"
+author: "nick ilagnev"
+date: "19 April 2016"
+output: 
+  html_document
+  pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Lesson commands over arbuthon data
+
+Connect external data source
+
+```{r}
+source("http://www.openintro.org/stat/data/arbuthnot.R")
+```
+
+***
+Check dataset sizes, and names
+
+```{r}
+dim(arbuthnot)
+names(arbuthnot)
+```
+
+***
+```{r echo=F}
+plot(x = arbuthnot$year, y = arbuthnot$girls, type = "l", ylab = "girls", xlab = "years", ylim = c(0,max(arbuthnot$girls)), main = "Girls over years" )
+```
+
+***
+```{r echo=F}
+plot(arbuthnot$year, arbuthnot$boys / (arbuthnot$boys + arbuthnot$girls) , type = "l", ylab = "boys/girls", xlab = "years", main = "Relation between girls and boys baptized over years")
+```
+
+## Data analys over actual newborn data
+
+```{r echo = F}
+source("http://www.openintro.org/stat/data/present.R")
+```
+
+Dimensions, names, and min/max years of present data set
+```{r}
+dim(present)
+names(present)
+c(min(present$year), max(present$year))
+```
+
+***
+Are the present data and arbuthon on the same scale? How many times they are differ (1 - mean equal)
+```{r}
+mean(present$girls + present$boys) / mean(arbuthnot$girls + arbuthnot$boys)
+```
+
+***
+Plot over relation between girls and boys borned in present years. As we can see on the plot boys born have tend to decrease from 1940 and then after 1975
+```{r echo=F}
+plot(present$year, present$boys / (present$boys + present$girls) , type = "l", ylab = "boys/girls", xlab = "years" )
+```
+
+***
+In what year did we see the most total number of births in the U.S.?
+```{r}
+present$year[which.max(present$boys + present$girls)]
+```
+
